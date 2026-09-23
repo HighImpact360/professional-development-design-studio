@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="An interactive design studio for building evidence-informed professional development pathways." />
+  <title>Professional Development Design Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="studio-header">
+      <a class="brand" href="#top" aria-label="Professional Development Design Studio home">
+        <span class="brand-mark">PD</span>
+        <span><strong>Professional Development</strong><small>Design Studio</small></span>
+      </a>
+      <div class="header-meta"><span class="live-dot"></span> evidence-informed planning lab</div>
+    </header>
+
+    <section id="top" class="hero">
+      <div class="hero-copy">
+        <p class="kicker">Build conditions for learning to stick</p>
+        <h1>Design a <em>professional learning pathway</em> people can actually use.</h1>
+        <p class="hero-intro">A short, interactive studio for translating a learning priority into a focused, supported, and sustained development experience.</p>
+        <a class="primary-action" href="#studio">Start the studio <span>↓</span></a>
+      </div>
+      <div class="hero-map" aria-label="An illustrated pathway from priorities to practice">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="map-node node-priority"><b>01</b><span>Clear priority</span></div>
+        <div class="map-node node-practice"><b>02</b><span>Active practice</span></div>
+        <div class="map-node node-support"><b>03</b><span>Coaching + feedback</span></div>
+        <div class="map-node node-transfer"><b>04</b><span>Transfer to work</span></div>
+        <svg class="map-lines" viewBox="0 0 500 410" aria-hidden="true"><path d="M95 122 C155 146, 178 168, 235 191 S352 209, 400 155"/><path d="M95 122 C105 195, 185 289, 289 319 S398 290, 401 246"/></svg>
+        <p class="map-caption">A pathway becomes more durable when learning, practice, feedback, and follow-through connect.</p>
+      </div>
+    </section>
+
+    <section class="evidence-strip" aria-labelledby="evidence-heading">
+      <div><p class="kicker">Professional development insights</p><h2 id="evidence-heading">What effective professional learning makes possible</h2></div>
+      <p class="evidence-intro">Use these research-informed principles as planning prompts—not a one-size-fits-all checklist.</p>
+      <div class="insight-grid">
+        <article><span>01</span><h3>Start with a meaningful, specific problem.</h3><p>Ground learning in a priority people recognize in their practice, rather than a broad topic with no clear application.</p></article>
+        <article><span>02</span><h3>Build in active practice and feedback.</h3><p>Make space to rehearse, receive usable feedback, revise, and apply learning in the context where it matters.</p></article>
+        <article><span>03</span><h3>Design for sustained support—not a single event.</h3><p>Extend learning through coaching, collaborative inquiry, reflection, and follow-up that supports transfer into everyday work.</p></article>
+      </div>
+      <p class="evidence-note">This studio draws on research syntheses and guidance from the Learning Policy Institute, Education Endowment Foundation, and teacher-coaching evidence. Sources are listed in the project README.</p>
+    </section>
+
+    <section id="studio" class="studio-section" aria-labelledby="studio-heading">
+      <div class="studio-intro">
+        <div><p class="kicker">Interactive studio</p><h2 id="studio-heading">Build your pathway.</h2></div>
+        <p>Move through the three stages to create a simple professional development brief. Finish to unlock a shareable completion badge.</p>
+      </div>
+
+      <div class="studio-grid">
+        <aside class="studio-sidebar" aria-label="Studio progress">
+          <div class="progress-ring" aria-hidden="true"><span id="progress-value">0%</span></div>
+          <ol class="steps" id="steps">
+            <li class="active"><span>01</span><div><b>Frame</b><small>Choose a practice priority</small></div></li>
+            <li><span>02</span><div><b>Design</b><small>Layer useful learning moves</small></div></li>
+            <li><span>03</span><div><b>Support</b><small>Plan the transfer loop</small></div></li>
+            <li><span>04</span><div><b>Share</b><small>Claim the completion badge</small></div></li>
+          </ol>
+          <div class="signal-card"><span>PATHWAY SIGNAL</span><strong id="signal-score">—</strong><small id="signal-copy">Complete the studio to reveal your design signal.</small></div>
+        </aside>
+
+        <div class="studio-board">
+          <div class="stage active" data-stage="0">
+            <div class="stage-label"><span>Stage 01</span><span>Frame the work</span></div>
+            <h3>What is the learning experience designed to improve?</h3>
+            <p>Choose one focused, practice-connected challenge. The goal is clarity—not choosing the “best” topic.</p>
+            <div class="choice-grid single-choice" data-group="priority">
+              <button type="button" class="choice-card" data-value="teaching"><span class="choice-num">A</span><strong>Active learning</strong><small>Help educators design more participatory learning moments.</small></button>
+              <button type="button" class="choice-card" data-value="assessment"><span class="choice-num">B</span><strong>Feedback for learning</strong><small>Strengthen timely, actionable feedback and assessment use.</small></button>
+              <button type="button" class="choice-card" data-value="ai"><span class="choice-num">C</span><strong>Responsible AI practice</strong><small>Support thoughtful, transparent use of generative AI.</small></button>
+              <button type="button" class="choice-card" data-value="belonging"><span class="choice-num">D</span><strong>Belonging + engagement</strong><small>Design conditions that promote connection and participation.</small></button>
+            </div>
+          </div>
+
+          <div class="stage" data-stage="1" hidden>
+            <div class="stage-label"><span>Stage 02</span><span>Design the learning</span></div>
+            <h3>Which learning moves will make the experience useful?</h3>
+            <p>Select at least three components. Each one builds a different bridge between information and practice.</p>
+            <div class="choice-grid multi-choice" data-group="moves">
+              <button type="button" class="choice-card" data-value="content"><span class="choice-num">01</span><strong>Focused content</strong><small>Keep the learning tied to the selected practice challenge.</small></button>
+              <button type="button" class="choice-card" data-value="practice"><span class="choice-num">02</span><strong>Active rehearsal</strong><small>Use cases, protocols, modeling, or practice cycles.</small></button>
+              <button type="button" class="choice-card" data-value="collaboration"><span class="choice-num">03</span><strong>Peer collaboration</strong><small>Make room for shared sense-making and local adaptation.</small></button>
+              <button type="button" class="choice-card" data-value="feedback"><span class="choice-num">04</span><strong>Feedback loop</strong><small>Offer coaching, observation, or usable response to practice.</small></button>
+              <button type="button" class="choice-card" data-value="duration"><span class="choice-num">05</span><strong>Sustained rhythm</strong><small>Plan follow-up across time instead of a single event.</small></button>
+            </div>
+          </div>
+
+          <div class="stage" data-stage="2" hidden>
+            <div class="stage-label"><span>Stage 03</span><span>Support transfer</span></div>
+            <h3>How will learning continue after the first session?</h3>
+            <p>Choose a support rhythm that makes application visible and gives people a reason to return to the work.</p>
+            <div class="support-options" data-group="support">
+              <button type="button" class="support-option" data-value="coaching"><span>01</span><div><strong>Coaching cycle</strong><small>Practice → feedback → refine</small></div><i>→</i></button>
+              <button type="button" class="support-option" data-value="inquiry"><span>02</span><div><strong>Inquiry huddle</strong><small>Try → share evidence → adjust</small></div><i>→</i></button>
+              <button type="button" class="support-option" data-value="showcase"><span>03</span><div><strong>Practice showcase</strong><small>Apply → reflect → model for peers</small></div><i>→</i></button>
+            </div>
+            <div class="pathway-preview" id="pathway-preview" aria-live="polite"><span>YOUR PATHWAY</span><strong>Choose a support rhythm to complete the draft.</strong></div>
+          </div>
+
+          <div class="stage" data-stage="3" hidden>
+            <div class="stage-label"><span>Stage 04</span><span>Share your completion</span></div>
+            <h3>Your professional learning pathway is ready to discuss.</h3>
+            <p id="completion-copy">Your choices now form an evidence-informed starting brief. Download a badge to share your participation on LinkedIn.</p>
+            <div class="completion-layout">
+              <div class="badge-preview" id="badge-preview" aria-label="Professional Development Design Studio completion badge preview">
+                <div class="badge-top"><span>PD</span><small>DESIGN STUDIO</small></div>
+                <div class="badge-body"><p>COMPLETED</p><strong>Professional<br/>Learning<br/><em>Pathway</em></strong><span class="badge-name" id="badge-name-preview">Your Name</span></div>
+                <div class="badge-footer"><span>Evidence-informed planning</span><b>2026</b></div>
+              </div>
+              <div class="badge-form">
+                <label for="badge-name">Add your name to the badge</label>
+                <input id="badge-name" type="text" maxlength="48" placeholder="Your name" autocomplete="name" />
+                <button type="button" id="download-badge" class="badge-download">Download badge <span>↓</span></button>
+                <button type="button" id="linkedin-share" class="linkedin-share">Share completion on LinkedIn <span>↗</span></button>
+                <p>The LinkedIn button opens a post draft. Attach the downloaded badge before sharing.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="studio-footer">
+            <button type="button" id="back-button" class="back-button" disabled>← Back</button>
+            <div class="footer-status" id="footer-status" aria-live="polite">Choose a practice priority to continue.</div>
+            <button type="button" id="next-button" class="next-button" disabled>Continue <span>→</span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="method-section">
+      <p class="kicker">A transparent tool</p>
+      <h2>What this simulation does—and does not—claim.</h2>
+      <div class="method-grid"><p><b>It does:</b> translate evidence-informed features of effective professional learning into a concrete planning conversation.</p><p><b>It does not:</b> score institutional performance, validate a program, or predict outcomes. Your completion badge recognizes engagement with the studio—not a credential or certification.</p></div>
+    </section>
+
+    <footer><span>Professional Development Design Studio</span><span>Created by Naketa R. Jones, Ed.D.</span><a href="https://www.naketajones.com" target="_blank" rel="noreferrer">naketajones.com ↗</a></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
