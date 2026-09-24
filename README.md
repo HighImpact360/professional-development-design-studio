@@ -1,6 +1,6 @@
 # Professional Development Design Studio
 
-An original browser-based design studio for turning a professional learning priority into a focused, active, and supported development pathway. Visitors choose a practice priority, layer evidence-informed learning moves, select a transfer rhythm, and download a personalized completion badge for sharing on LinkedIn.
+An original browser-based design studio for turning a professional learning priority into a focused, active, and supported development pathway. Visitors choose a practice priority, layer evidence-informed learning moves, select a transfer rhythm, and download a personalized completion badge as a PNG image.
 
 > **Live interactive preview:** `https://highimpact360.github.io/professional-development-design-studio/`
 
@@ -13,7 +13,7 @@ This is a **planning studio**, not a quiz or a branching scenario. It invites us
 1. **Frame** a specific practice-connected development priority.
 2. **Design** the experience by selecting at least three learning moves.
 3. **Support transfer** through a coaching, inquiry, or showcase rhythm.
-4. **Share** a personalized completion badge downloaded locally as a PNG. The LinkedIn control opens a share draft; users attach the downloaded badge themselves before posting.
+4. **Download** a personalized completion badge locally as a PNG. If a visitor wants to post it to LinkedIn, they attach the image themselves using LinkedIn's Photo option.
 
 The completion badge recognizes engagement with this reflection activity. It is **not a credential, certification, assessment result, or evidence of competency**.
 
